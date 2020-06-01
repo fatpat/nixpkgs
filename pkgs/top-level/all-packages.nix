@@ -24431,6 +24431,8 @@ in
     gtk = gtk2;
   };
 
+  sys_pc_tool = callPackage ../applications/misc/sys_pc_tool {};
+
   xfce = recurseIntoAttrs (callPackage ../desktops/xfce { });
 
   xrandr-invert-colors = callPackage ../applications/misc/xrandr-invert-colors { };
